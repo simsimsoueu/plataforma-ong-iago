@@ -3,20 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Usuário</title>
+    <title>Patas do Amanhã - Início</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Usuário</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="projeto.html">Projeto</a></li>
-                    <li><a href="cadastro.html">Cadastro</a></li>
-                </ul>
-            </nav>
-    
+        <nav>
+            <div class="logo">🐾 Patas do Amanhã</div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul id="navMenu">
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="projeto.html">Projetos</a></li>
+                <li><a href="cadastro.html">Cadastre-se</a></li>
+            </ul>
+        </nav>
     </header>
-    
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Transforme Vidas com Amor e Cuidado Animal</h1>
+            <p>Somos uma organização sem fins lucrativos dedicada ao resgate, tratamento e adoção de animais abandonados. Junte-se a nós e faça parte dessa corrente de amor e esperança.</p>
+            <a href="cadastro.html" class="btn-primary">Quero Ajudar</a>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>Quem Somos</h2>
+        <p>A <strong>Patas do Amanhã</strong> nasceu do desejo de dar uma segunda chance a cães e gatos abandonados. Trabalhamos com resgate, cuidados veterinários, castração e adoção responsável. Acreditamos que cada vida importa — e que o amor pode transformar histórias.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Patas do Amanhã. Todos os direitos reservados.</p>
+        <p>Feito com 🩵 por quem acredita que cada vida merece um lar.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

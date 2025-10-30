@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patas do Amanhã - Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🐾 Patas do Amanhã</div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul id="navMenu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="projeto.html">Projetos</a></li>
+                <li><a href="cadastro.html" class="active">Cadastre-se</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero hero-cadastro">
+        <div class="hero-content">
+            <h1>Cadastre-se para Fazer Parte da Nossa ONG</h1>
+            <p>Junte-se a nós e ajude a transformar a vida de animais abandonados com amor e cuidado.</p>
+        </div>
+    </section>
+
+    <main>
+        <section class="signup-section">
+            <h2>Cadastro de Voluntários</h2>
+            <form id="volunteerForm">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <div class="form-group">
+                        <label for="nome">Nome Completo *</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone *</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Disponibilidade</legend>
+                    <div class="form-group">
+                        <label for="disponibilidade">Quando você pode ajudar? *</label>
+                        <select id="disponibilidade" name="disponibilidade" required>
+                            <option value="">Selecione...</option>
+                            <option value="fins-de-semana">Fins de semana</option>
+                            <option value="dias-uteis">Dias úteis</option>
+                            <option value="flexivel">Horário flexível</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="area-interesse">Área de Interesse *</label>
+                        <select id="area-interesse" name="area-interesse" required>
+                            <option value="">Selecione...</option>
+                            <option value="resgate">Resgate de Animais</option>
+                            <option value="cuidados">Cuidados e Alimentação</option>
+                            <option value="adoção">Feiras de Adoção</option>
+                            <option value="divulgação">Divulgação e Redes Sociais</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="btn-primary">Enviar Cadastro</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Patas do Amanhã. Todos os direitos reservados.</p>
+        <p>Feito com 🩵 por quem acredita que cada vida merece um lar.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
