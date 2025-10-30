@@ -1,0 +1,368 @@
+/* ==================== GOOGLE FONT ==================== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* ==================== RESET ==================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==================== BODY ==================== */
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.7;
+  color: #2b2b2b;
+  background-color: #e8eaee;
+  background-image: url("images/patas.png");
+  background-repeat: repeat;
+  background-size: 180px;
+  background-attachment: fixed;
+  font-weight: 400;
+}
+
+/* ==================== HEADER ==================== */
+header {
+  background: linear-gradient(135deg, #a5c9ff, #76aef1);
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+/* ==================== MENU ==================== */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.9;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+nav a:hover,
+nav a.active {
+  opacity: 1;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+/* ==================== MENU MOBILE ==================== */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: linear-gradient(135deg, #a5c9ff, #76aef1);
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* ==================== HERO ==================== */
+.hero {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding: 100px 20px;
+  margin: 100px auto;
+  max-width: 900px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #5b92e5;
+  font-weight: 700;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1.15rem;
+  color: #333;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.btn-primary {
+  background-color: #8fc6ff;
+  color: #1e3a5f;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary:hover {
+  background-color: #a9d5ff;
+  transform: translateY(-3px);
+}
+
+/* ==================== ABOUT ==================== */
+.about {
+  background-color: rgba(255, 255, 255, 0.88);
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 900px;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+  color: #5b92e5;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.about p {
+  font-size: 1.1rem;
+  color: #2b2b2b;
+  line-height: 1.9;
+  font-weight: 400;
+}
+
+/* ==================== CARDS ==================== */
+.impact-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 260px;
+  padding: 25px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+  text-align: center;
+}
+
+.card-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #5b92e5;
+}
+
+.card h3 {
+  color: #5b92e5;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ==================== FORMULÁRIO ==================== */
+.signup-section {
+  background-color: rgba(255, 255, 255, 0.88);
+  padding: 60px 20px;
+  max-width: 700px;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.signup-section h2 {
+  text-align: center;
+  color: #5b92e5;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+fieldset {
+  border: 1px solid #c8d9ef;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+legend {
+  color: #5b92e5;
+  font-weight: 600;
+  padding: 0 10px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #2b2b2b;
+}
+
+input,
+select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #cdd6e3;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+input:focus,
+select:focus {
+  border-color: #5b92e5;
+  outline: none;
+}
+
+button.btn-primary {
+  border: none;
+  cursor: pointer;
+  align-self: center;
+}
+
+/* ==================== CTA ==================== */
+.cta {
+  background: linear-gradient(135deg, #a5c9ff, #76aef1);
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+  border-radius: 8px;
+  margin: 60px auto;
+  max-width: 800px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cta h2 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.btn-secondary {
+  display: inline-block;
+  margin-left: 10px;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: white;
+  color: #5b92e5;
+}
+
+/* ==================== FOOTER ==================== */
+footer {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 40px;
+  font-size: 0.95rem;
+  border-top: 1px solid #cdd6e3;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+  font-weight: 500;
+}
+
+.contact {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 60px 20px;
+  max-width: 700px;
+  margin: 40px auto;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  color: #2b2b2b;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+}
+
+.contact h2 {
+  text-align: center;
+  color: #5b92e5;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.contact p {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: #2b2b2b;
+}
+
+.contact ul {
+  list-style-type: disc;
+  padding-left: 35px;
+  line-height: 1.9;
+}
+
+.contact li strong {
+  color: #5b92e5;
+  font-weight: 600;
+}
