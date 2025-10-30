@@ -15,7 +15,7 @@
 - **Curso:** Ciência da Computação  
 - **Aluno:** Iago Gusmão  
 - **Disciplina:** Desenvolvimento Front-End para Web  
-- **Tema:** ONG fictícia dedicada ao cuidado de animais abandonados.
+
 
 ---
 
