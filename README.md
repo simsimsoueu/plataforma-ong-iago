@@ -6,7 +6,6 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
 > Código do projeto: **https://github.com/simsimsoeu/plataforma-ong-iago**  
-> (Opcional) Deploy via GitHub Pages: **https://simsimsoeu.github.io/plataforma-ong-iago/**
 
 ---
 
@@ -47,3 +46,13 @@ O objetivo é conectar voluntários à causa animal, permitindo **cadastro de vo
 - **JavaScript ES6+**: manipulação do DOM, eventos, `localStorage`, máscaras de input
 
 ---
+
+## Como Executar o Projeto
+
+1. **Clonar o repositório:**
+
+   git clone https://github.com/simsimsoueu/plataforma-ong-iago.git
+
+2. **Navegar até a pasta do projeto:**
+
+      cd plataforma-ong-iago
